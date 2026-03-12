@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: antigravity-yt-analyzer-api
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    plan: free
+    envVars:
+      - key: YOUTUBE_API_KEY
+        sync: false
